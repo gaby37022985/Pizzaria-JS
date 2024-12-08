@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria JS - Faça seu Pedido</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form">
+        <h1>🍕 Fazer pedido</h1>
+    <div class="texto de entrada">
+        <!-- Campo Nome do Cliente -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+        <!-- Escolha do Sabor -->
+        <h3>Escolha o sabor da pizza:</h3>
+        <label>
+            <input type="radio" name="sabor" value="mussarela"> Mussarela
+        </label>
+        <label>
+            <input type="radio" name="sabor" value="calabresa"> Calabresa
+        </label>
+        <label>
+            <input type="radio" name="sabor" value="frango-catupiry"> Frango com Catupiry
+        </label>
+        <label>
+            <input type="radio" name="sabor" value="portuguesa"> Portuguesa
+        </label>
+
+        <!-- Escolha do Tamanho -->
+        <h3>Escolha o tamanho da pizza:</h3>
+        <label>
+            <input type="radio" name="tamanho" value="pequena"> Pequena (R$ 25,00)
+        </label>
+        <label>
+            <input type="radio" name="tamanho" value="media"> Média (R$ 35,00)
+        </label>
+        <label>
+            <input type="radio" name="tamanho" value="grande"> Grande (R$ 50,00)
+        </label>
+
+        <!-- Escolha dos Adicionais -->
+        <h3>Escolha os adicionais (R$ 5,00 cada):</h3>
+        <label>
+            <input type="checkbox" name="adicionais" value="bacon"> Bacon
+        </label>
+        <label>
+            <input type="checkbox" name="adicionais" value="queijo"> Queijo
+        </label>
+        <label>
+            <input type="checkbox" name="adicionais" value="azeitona"> Azeitona
+        </label>
+        <label>
+            <input type="checkbox" name="adicionais" value="calabresa-extra"> Calabresa Extra
+        </label>
+
+        <!-- Valor Total -->
+        <h2>💰Total: R$ <strong>00,00</strong></h2>
+
+        <!-- Botão de Pedido -->
+        <button type="button" onclick="fazerPedido()">Fazer Pedido</button>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
